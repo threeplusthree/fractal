@@ -1,0 +1,132 @@
+:root{
+  --number:1;
+  --pixel:1px;
+}
+#everything{
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+}
+
+#main{
+  width:500px;
+  text-align:center;
+}
+#title{
+  position:absolute;
+  top:30px;
+}
+#main h1{
+  font-size:40px;
+  margin-bottom:5px;
+  width:500px;
+}
+#main p{
+  font-size:17px;
+  text-align:left;
+  width:400px;
+  margin-left:50px;
+  margin-right:50px;
+  margin-top:0px;
+}
+#result{
+  font-size:60px;
+  margin:50px;
+  text-align:center;
+  margin-left:10px;
+  margin-right:10px;
+  height:100px;
+}
+#school{
+  font-size:30px;
+  position:absolute;
+  bottom:30px;
+  margin-left:50px;
+  margin-right:50px;
+  width:400px;
+}
+#logo{
+  width:40px;
+  height:40px;
+}
+
+#large-grid{
+  display:grid;
+  grid-template-rows:repeat(var(--number),var(--pixel));
+  border-top:1px solid #666666;
+  border-left:1px solid #666666;
+  border-bottom:none;
+  border-right:none;
+  width:calc(var(--number)*var(--pixel));
+}
+.small-grid{
+  display:grid;
+  grid-template-columns:repeat(var(--number),var(--pixel));
+  border:none;
+}
+.cell{
+  border-top:none;
+  border-left:none;
+}
+.nvcell{
+  border-right:1px solid #cccccc;
+}
+.vcell{
+  border-right:1px solid #666666;
+}
+.nhcell{
+  border-bottom:1px solid #cccccc;
+}
+.hcell{
+  border-bottom:1px solid #666666;
+}
+
+
+#buttons{
+  width:300px;
+  align-items:center;
+}
+#buttons button{
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-left:50px;
+  margin-right:50px;
+  width:200px;
+  height:75px;
+  border-width:3px;
+  border-style:solid;
+  border-radius: 10px;
+  background-color:white;
+  font-size:35px;
+  transition:background-color 200ms;
+}
+#save{
+  border-color:#33ff00;
+}
+#save:hover{
+  background-color:#ccff99;
+}
+#load{
+  border-color:#cc00ff;
+}
+#load:hover{
+  background-color:#ffccff;
+}
+#clear{
+  border-color:#ff0033;
+}
+#clear:hover{
+  background-color:#ffcccc;
+}
+#inverse{
+  border-color:#6633ff;
+}
+#inverse:hover{
+  background-color:#ccccff;
+}
+#sample{
+  border-color:#ffcc33;
+}
+#sample:hover{
+  background-color:#ffff99;
+}
