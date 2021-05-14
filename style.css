@@ -130,3 +130,49 @@
 #sample:hover{
   background-color:#ffff99;
 }
+
+
+#samples{
+  display:none;
+  position:absolute;
+  width:80vw;
+  height:80vh;
+  left:10vw;
+  top:10vh;
+  background-color:white;
+  border:3px solid black;
+  overflow-y:scroll;
+  border-radius:10px;
+}
+
+h3{
+  font-size:40px;
+  text-align:center;
+}
+h4{
+  font-size:35px;
+  text-align:center;
+}
+.samplebutton{
+  margin:10px;
+  width:350px;
+  height:60px;
+  border:2px solid #999999;
+  border-radius: 5px;
+  background-color:white;
+  font-size:35px;
+  transition:background-color 200ms;
+}
+.samplebutton:hover{
+  background-color:#cccccc;
+}
+#close-sample{
+  position:absolute;
+  top:20px;
+  right:20px;
+  width:150px;
+  border-color:#ff0033;
+}
+#close-sample:hover{
+  background-color:#ffcccc;
+}
